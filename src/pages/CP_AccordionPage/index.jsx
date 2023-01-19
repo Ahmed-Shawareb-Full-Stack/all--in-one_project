@@ -35,8 +35,8 @@ const AccordionPage = () => {
   });
   return (
     <div className="acc__page">
-      <h1 className="acc__page--heading">Accordion Component</h1>
-      <p className="acc__page--desc">
+      <h1 className="acc__page--heading text-center">Accordion Component</h1>
+      <p className="acc__page--desc ">
         Ea ipsum culpa pariatur aliquip anim laborum occaecat amet qui ex
         deserunt quis. Cupidatat proident et nostrud amet ullamco. Aute anim
         irure est commodo fugiat aute do. Ea dolor enim sit sunt labore veniam.

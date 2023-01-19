@@ -4,7 +4,7 @@
   height: 97.5vh;
   border-radius: 2rem 0 0rem 2rem;
   flex-wrap: nowrap;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   &__toggle {
     top: -1rem;
@@ -80,4 +80,10 @@
   color: $color-p !important;
   padding: 1rem 2rem;
   border-radius: 5px;
+}
+
+@media (max-width: 991.98px) {
+  .nav {
+    border-radius: 2rem;
+  }
 }

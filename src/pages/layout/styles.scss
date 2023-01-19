@@ -29,6 +29,12 @@
   z-index: 111;
 }
 
+@media (max-width: 991.98px) {
+  .navigation {
+    left: 0;
+  }
+}
+
 .hide-Nav {
   max-width: 0;
   opacity: 0;
@@ -48,5 +54,4 @@
 
 .outlet-expand {
   width: 100vw;
-  height: 100vh;
 }

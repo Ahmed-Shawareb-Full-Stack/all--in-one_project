@@ -13,7 +13,7 @@ const Layout = () => {
   console.log("left up " + navState);
 
   return (
-    <div className="container-fluid position-relative d-flex ">
+    <div className="container-fluid position-relative ">
       <div
         className={`position-fixed navigation__toggle ${
           navState ? "show-btn" : "hide-btn"
