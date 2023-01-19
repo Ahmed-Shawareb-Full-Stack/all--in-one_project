@@ -1,0 +1,73 @@
+@import "../../scss/abstracts/variables";
+
+.acc {
+  border: 0.25rem solid $color-t;
+  border-radius: 5px;
+  &__heading {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    border-bottom: 0.25rem solid $color-t;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding: 1rem 3rem;
+
+    &:not(:last-child) {
+      border-bottom: 0.25rem solid $color-white;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+
+    &:checked ~ .acc__content {
+      padding: 3rem;
+      max-height: 5000px;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:checked ~ .acc__title .acc__icon--close {
+      visibility: visible;
+    }
+    &:checked ~ .acc__title .acc__icon--open {
+      visibility: hidden;
+    }
+
+    &:checked ~ .acc__title {
+      border-bottom: 0.25rem solid $color-t;
+    }
+  }
+
+  &__icon--open {
+    right: 0%;
+  }
+
+  &__icon--close {
+    right: 0%;
+    visibility: hidden;
+  }
+
+  &__label {
+    width: 100%;
+  }
+
+  &__content {
+    margin: 0;
+    max-height: 0;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    backface-visibility: hidden;
+  }
+}

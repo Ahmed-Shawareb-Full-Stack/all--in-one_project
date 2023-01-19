@@ -1,0 +1,65 @@
+@import "../../scss/abstracts/variables";
+.nav {
+  background-color: $color-p;
+  height: 97.5vh;
+  border-radius: 2rem 0 0 0rem;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+
+  &__toggle {
+    top: -1.5rem;
+    left: -1.5rem;
+    z-index: 999;
+    transition: all 0.5s;
+  }
+
+  &__toggle-btn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0 0 5px 0;
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+  }
+
+  &__tab {
+    cursor: pointer;
+  }
+
+  &__tab-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+
+  &__links-container {
+  }
+
+  &__projects-list {
+    max-height: 0;
+    transition: all 0.5s;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__link {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.expanded {
+  max-height: 20vh;
+  visibility: visible;
+  opacity: 1;
+}
