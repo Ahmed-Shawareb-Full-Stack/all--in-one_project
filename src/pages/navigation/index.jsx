@@ -6,6 +6,7 @@ import {
 } from "react-icons/bs";
 import "./styles.scss";
 import { useEffect, useState } from "react";
+import { useMedia } from "react-use";
 
 const selfProjectsNavLinks = [
   {
@@ -27,6 +28,7 @@ const frontendMentorNavLinks = [
 ];
 
 const Navigation = ({ onToggle, navState }) => {
+  const matchQ = useMedia("(max-width : 991.98px )");
   const [expandNav, setExpandNav] = useState(true);
   const [expandSelf, setExpandSelf] = useState(false);
   const [expandCourse, setExpandCourse] = useState(false);
@@ -45,36 +47,59 @@ const Navigation = ({ onToggle, navState }) => {
     setExpandNav(!navState);
   }, [navState]);
 
-  console.log(expandNav);
-
   const handleSelfTabClick = () => {
     setExpandSelf(!expandSelf);
   };
+
   const handleCourseTabClick = () => {
     setExpandCourse(!expandCourse);
   };
+
   const handleMentorTabClick = () => {
     setExpandMentor(!expandMentor);
   };
 
+  const handleClickMediaMatched = () => {
+    if (matchQ) {
+      setExpandNav(!expandNav);
+      onToggle(expandNav);
+    } else return;
+  };
+
   const renderedSelfProjectsNavLinks = selfProjectsNavLinks.map((navLink) => (
-    <li key={navLink.to} className="nav__list-item">
-      <NavLink to={navLink.to}>{navLink.title}</NavLink>
+    <li
+      onClick={handleClickMediaMatched}
+      key={navLink.to}
+      className="nav__list-item"
+    >
+      <NavLink to={navLink.to} className={`nav__link `}>
+        {navLink.title}
+      </NavLink>
     </li>
   ));
 
   const renderedCourseProjectsNavLinks = courseProjectsNavLinks.map(
     (navLink) => (
-      <li key={navLink.to} className="nav__list-item">
-        <NavLink to={navLink.to}>{navLink.title}</NavLink>
+      <li
+        onClick={handleClickMediaMatched}
+        key={navLink.to}
+        className="nav__list-item"
+      >
+        <NavLink to={navLink.to} className={`nav__link `}>
+          {navLink.title}
+        </NavLink>
       </li>
     )
   );
 
   const renderedFrontendMentorNavLinks = frontendMentorNavLinks.map(
     (navLink) => (
-      <li key={navLink.to} className="nav__list-item">
-        <NavLink to={navLink.to} className="nav__link">
+      <li
+        onClick={handleClickMediaMatched}
+        key={navLink.to}
+        className="nav__list-item"
+      >
+        <NavLink to={navLink.to} className={`nav__link `}>
           {navLink.title}
         </NavLink>
       </li>
@@ -83,7 +108,7 @@ const Navigation = ({ onToggle, navState }) => {
 
   return (
     <div>
-      <div className="nav__toggle position-absolute">
+      <div className="nav__toggle position-fixed">
         <button className="nav__toggle-btn" onClick={handleNavState}>
           <BsArrowUpLeft style={{ fontSize: "2rem" }} />
         </button>

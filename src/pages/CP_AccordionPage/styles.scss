@@ -1,13 +1,35 @@
+@import "../../scss/abstracts/variables";
+
 .acc__page {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
   padding: 2rem;
   width: 100%;
   overflow-y: scroll;
   align-items: center;
   justify-content: center;
+
+  &--container {
+    width: 50%;
+  }
+
+  &--heading {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  &--desc {
+    width: 75%;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 2px solid $color-f;
+    border-radius: 5px;
+  }
 }
 
-.acc__container {
-  width: 50%;
+@media (max-width: 991.98px) {
+  .acc__page--container {
+    width: 100%;
+  }
 }

@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: $color-f;
+  color: $color-s;
 }
 
 a {
@@ -22,7 +22,7 @@ a {
   &:link,
   &:visited,
   &:focus {
-    color: $color-f;
+    color: $color-s;
   }
 }
 

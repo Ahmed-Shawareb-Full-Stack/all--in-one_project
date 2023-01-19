@@ -15,7 +15,7 @@ const Layout = () => {
   return (
     <div className="container-fluid position-relative d-flex ">
       <div
-        className={`position-absolute navigation__toggle ${
+        className={`position-fixed navigation__toggle ${
           navState ? "show-btn" : "hide-btn"
         } `}
       >
@@ -37,7 +37,7 @@ const Layout = () => {
         <div
           className={`col-lg-9  outlet position-relative ms-auto ${
             navState ? "outlet-expand" : ""
-          }`}
+          } d-flex align-items-center justify-content-center`}
         >
           <Outlet />
         </div>
