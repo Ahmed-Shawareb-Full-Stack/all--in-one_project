@@ -1,0 +1,71 @@
+@import "../../scss/abstracts/variables";
+
+.dropdown {
+  &__select {
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border: 2px solid $color-f;
+    border-radius: 5px 5px 0 0;
+
+    &--icon {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__options {
+    &--container {
+      overflow: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      border-left: 2px solid $color-f;
+      border-right: 2px solid $color-f;
+      border-radius: 0 0 5px 5px;
+      transition: all 1s ease;
+    }
+
+    &--list {
+      list-style: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      max-height: 0rem;
+      transition: max-height 1s ease;
+    }
+  }
+
+  &__option {
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    width: 100%;
+    border-bottom: 2px solid $color-f;
+  }
+}
+
+.expand {
+  max-height: 1000rem;
+}
+
+.RED {
+  background-color: red;
+  color: yellow;
+  border: 2px solid black;
+}
+
+.GREEN {
+  background-color: #23a402;
+  color: black;
+  border: 2px solid black;
+}
+
+.BLUE {
+  background-color: blue;
+  color: white;
+  border: 2px solid yellow;
+}

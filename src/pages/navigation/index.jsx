@@ -19,6 +19,10 @@ const courseProjectsNavLinks = [
     to: "/accordion",
     title: "CP - Accordion Component",
   },
+  {
+    to: "/dropdown",
+    title: "CP - Dropdown Component",
+  },
 ];
 const frontendMentorNavLinks = [
   {

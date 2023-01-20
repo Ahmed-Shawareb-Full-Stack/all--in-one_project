@@ -10,8 +10,6 @@ const Layout = () => {
     setNavState(state);
   };
 
-  console.log("left up " + navState);
-
   return (
     <div className="container-fluid position-relative ">
       <div
@@ -26,7 +24,7 @@ const Layout = () => {
           <BsArrowDownRight style={{ fontSize: "2rem" }} />
         </button>
       </div>
-      <div className="row w-100">
+      <div className="row ">
         <div
           className={`col-lg-3 ${
             navState ? "hide-Nav" : "show-Nav"
