@@ -1,3 +1,9 @@
+.layout {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 .navigation__toggle {
   top: -1rem;
   left: -1rem;
@@ -49,7 +55,6 @@
 }
 
 .outlet {
-  display: block;
 }
 
 .outlet-expand {

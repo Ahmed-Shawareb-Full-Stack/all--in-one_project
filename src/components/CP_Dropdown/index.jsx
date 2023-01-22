@@ -1,9 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BsChevronDoubleDown, BsChevronDoubleUp } from "react-icons/bs";
 import "./styles.scss";
 
 const DropDown = ({ options, value, onChange }) => {
+  const dropdownEl = useRef();
   const [expand, setExpand] = useState(false);
+
+  useEffect(() => {
+    const handler = (event) => {
+      if (!dropdownEl.current) {
+        return;
+      }
+      if (!dropdownEl.current.contains(event.target)) {
+        setExpand(false);
+      }
+    };
+    document.addEventListener("click", handler, true);
+  }, []);
 
   const handleExpand = () => {
     setExpand(!expand);
@@ -25,7 +38,7 @@ const DropDown = ({ options, value, onChange }) => {
     );
   });
   return (
-    <div className="dropdown">
+    <div ref={dropdownEl} className="dropdown">
       <div
         className={`dropdown__select position-relative ${value?.option}`}
         onClick={handleExpand}

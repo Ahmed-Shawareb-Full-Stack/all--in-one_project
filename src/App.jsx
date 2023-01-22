@@ -4,11 +4,13 @@ import Project$1$Card from "./pages/Project$1$Card";
 import Layout from "./pages/layout/index";
 import AccordionPage from "./pages/CP_AccordionPage";
 import DropdownPage from "./pages/CP_DropdownPage";
+import TablePage from "./pages/CP_TablePage/index";
+
 import "./index.scss";
 
 function App() {
   return (
-    <div className="App container-fluid">
+    <div className="App container-fluid p-0 m-0">
       <Routes>
         <Route path="/" element={<Layout />}>
           //* ─── Self-learning Projects ──────────
@@ -16,6 +18,8 @@ function App() {
           //* ─── Course Projects ─────────────────
           <Route path="accordion" element={<AccordionPage />} />
           <Route path="dropdown" element={<DropdownPage />} />
+          <Route path="table" element={<TablePage />} />
+          <Route path="karim" element={<Home />} />
           //* ─── Frontend Mentor Projects ────────
           <Route path="card" element={<Project$1$Card />} />
         </Route>

@@ -11,7 +11,7 @@ const Layout = () => {
   };
 
   return (
-    <div className="container-fluid position-relative ">
+    <div className="layout container-fluid position-relative p-0 m-0">
       <div
         className={`position-fixed navigation__toggle ${
           navState ? "show-btn" : "hide-btn"
@@ -24,7 +24,7 @@ const Layout = () => {
           <BsArrowDownRight style={{ fontSize: "2rem" }} />
         </button>
       </div>
-      <div className="row ">
+      <div className="row m-0 p-0 row-s w-100">
         <div
           className={`col-lg-3 ${
             navState ? "hide-Nav" : "show-Nav"
@@ -35,7 +35,7 @@ const Layout = () => {
         <div
           className={`col-lg-9  outlet position-relative ms-auto ${
             navState ? "outlet-expand" : ""
-          } d-flex align-items-center justify-content-center`}
+          } d-flex align-items-center justify-content-center flex-column`}
         >
           <Outlet />
         </div>

@@ -23,6 +23,14 @@ const courseProjectsNavLinks = [
     to: "/dropdown",
     title: "CP - Dropdown Component",
   },
+  {
+    to: "/table",
+    title: "CP - Table",
+  },
+  {
+    to: "/karim",
+    title: "CP - karim",
+  },
 ];
 const frontendMentorNavLinks = [
   {

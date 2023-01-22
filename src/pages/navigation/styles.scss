@@ -73,9 +73,10 @@
 }
 
 .expanded {
-  max-height: 20vh;
+  max-height: 25vh;
   visibility: visible;
   opacity: 1;
+  overflow-y: auto;
 }
 
 .active {

@@ -1,0 +1,29 @@
+.table {
+  width: 75%;
+  border-radius: 5px;
+}
+
+@media (max-width: 991.98px) {
+  .table {
+    width: 100%;
+  }
+}
+
+th {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+td {
+  font-size: 2.2rem;
+}
+
+// thead tr {
+//   height: 8rem;
+// }
+// .icon__container {
+//   height: 6rem;
+//   display: flex;
+//   align-items: center;
+//   margin-right: 1.5rem;
+// }
