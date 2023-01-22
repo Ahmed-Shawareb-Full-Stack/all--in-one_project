@@ -19,7 +19,6 @@ function App() {
           <Route path="accordion" element={<AccordionPage />} />
           <Route path="dropdown" element={<DropdownPage />} />
           <Route path="table" element={<TablePage />} />
-          <Route path="karim" element={<Home />} />
           //* ─── Frontend Mentor Projects ────────
           <Route path="card" element={<Project$1$Card />} />
         </Route>

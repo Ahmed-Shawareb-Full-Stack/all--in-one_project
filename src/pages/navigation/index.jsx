@@ -27,10 +27,6 @@ const courseProjectsNavLinks = [
     to: "/table",
     title: "CP - Table",
   },
-  {
-    to: "/karim",
-    title: "CP - karim",
-  },
 ];
 const frontendMentorNavLinks = [
   {
