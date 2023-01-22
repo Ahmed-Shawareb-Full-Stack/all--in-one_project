@@ -76,7 +76,7 @@ const SortableTable = (props) => {
 function getIcons(label, sortBy, sortOrder) {
   if (label !== sortBy) {
     return (
-      <div className="d-flex flex-column icon__container">
+      <div className="d-flex flex-column icon__container align-items-center justify-content-center">
         <BsFillCaretUpFill />
         <BsFillCaretDownFill />
       </div>
@@ -85,20 +85,20 @@ function getIcons(label, sortBy, sortOrder) {
 
   if (sortOrder === null) {
     return (
-      <div className="d-flex flex-column icon__container">
+      <div className="d-flex flex-column icon__container align-items-center justify-content-center">
         <BsFillCaretUpFill />
         <BsFillCaretDownFill />
       </div>
     );
   } else if (sortOrder === "asc") {
     return (
-      <div className="icon__container">
+      <div className="d-flex flex-column icon__container align-items-center justify-content-center">
         <BsFillCaretUpFill />
       </div>
     );
   } else if (sortOrder === "desc") {
     return (
-      <div className="icon__container">
+      <div className="d-flex flex-column icon__container align-items-center justify-content-center">
         <BsFillCaretDownFill />
       </div>
     );

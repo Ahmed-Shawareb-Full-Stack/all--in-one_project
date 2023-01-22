@@ -1,5 +1,5 @@
 import React from "react";
-import SortableTable from "../../components/CP_StyledTable";
+import SortableTable from "../../components/CP_SortableTable";
 import Table from "../../components/CP_Table";
 import "./styles.scss";
 
