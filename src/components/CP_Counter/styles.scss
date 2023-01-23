@@ -76,3 +76,88 @@
     }
   }
 }
+
+@media (max-width: 991.98px) {
+  .counter {
+    width: 90%;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+    &__value {
+      font-size: 6rem;
+      color: $color-f;
+    }
+
+    &__btn {
+      margin: 0;
+      width: 100%;
+      font-size: 2.5rem;
+      font-weight: 500;
+      height: 6rem;
+      &:active {
+        color: $color-f !important;
+        border: 1px solid $color-s !important;
+      }
+
+      &--container {
+        border: 2px solid $color-s;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 12rem;
+        margin-bottom: 3rem;
+      }
+
+      &--incr {
+        border-radius: 0px;
+      }
+
+      &--decr {
+        border-radius: 0px;
+      }
+
+      &--add-value {
+        width: 25%;
+        font-size: 3rem;
+      }
+    }
+
+    &__add-value {
+      height: 100%;
+      font-size: 2.5rem;
+
+      &:focus {
+        border-color: $color-f;
+        box-shadow: 0 0 0 0.25rem $color-f;
+      }
+      &--form {
+        height: 6rem;
+        width: 100%;
+        border: 2px solid $color-s;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      &--container {
+        width: 75%;
+        display: flex;
+        align-items: center;
+      }
+
+      &--label {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-right: 2rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
