@@ -656,6 +656,11 @@ hyphenate-style-name@^1.0.3:
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
   integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
 
+immer@^9.0.18:
+  version "9.0.18"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.18.tgz#d2faee58fd0e34f017f329b98cdab37826fa31b8"
+  integrity sha512-eAPNpsj7Ax1q6Y/3lm2PmlwRcFzpON7HSNQ3ru5WQH1/PSpnyed/HpNOELl2CxLKoj4r+bAHgdyKqW5gc2Se1A==
+
 immutable@^4.0.0:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.2.2.tgz#2da9ff4384a4330c36d4d1bc88e90f9e0b0ccd16"

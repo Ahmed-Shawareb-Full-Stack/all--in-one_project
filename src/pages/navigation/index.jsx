@@ -27,6 +27,10 @@ const courseProjectsNavLinks = [
     to: "/table",
     title: "CP - Table",
   },
+  {
+    to: "/counter",
+    title: "CP - Counter",
+  },
 ];
 const frontendMentorNavLinks = [
   {
