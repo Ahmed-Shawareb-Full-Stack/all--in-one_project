@@ -9,10 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@reduxjs/toolkit": "^1.9.1",
     "immer": "^9.0.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.2",
     "react-use": "^17.4.0",
     "sass": "^1.57.1"

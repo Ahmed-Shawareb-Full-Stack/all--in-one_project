@@ -31,6 +31,10 @@ const courseProjectsNavLinks = [
     to: "/counter",
     title: "CP - Counter",
   },
+  {
+    to: "/mediaplaylist",
+    title: "CP - Media PlayList",
+  },
 ];
 const frontendMentorNavLinks = [
   {
