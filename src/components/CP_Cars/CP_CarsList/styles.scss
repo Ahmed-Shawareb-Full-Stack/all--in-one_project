@@ -1,0 +1,59 @@
+@import "../../../scss/abstracts/variables";
+
+.cars-list {
+  &__container {
+    border: 2px solid $color-f;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 30vh;
+    overflow-y: auto;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+
+  &__list-item {
+    font-size: 2.2rem;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid $color-f;
+  }
+
+  &__info-container {
+  }
+
+  &__delete-btn-container {
+    width: 20%;
+  }
+}
+
+.match {
+  &-list-item {
+    background-color: $color-p;
+    color: lighten($color-f, 5%);
+  }
+  &-info-container {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  &-container {
+    border: 2px solid $color-o;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cars-list__container {
+    height: auto;
+    max-height: 40vh;
+  }
+  .cars-list__list-item {
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #00adb5;
+  }
+}

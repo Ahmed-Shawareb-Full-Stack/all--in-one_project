@@ -35,6 +35,10 @@ const courseProjectsNavLinks = [
     to: "/mediaplaylist",
     title: "CP - Media PlayList",
   },
+  {
+    to: "/cars",
+    title: "CP - Cars",
+  },
 ];
 const frontendMentorNavLinks = [
   {

@@ -1,0 +1,17 @@
+@import "../../../scss/abstracts/variables";
+
+.cars-value {
+  &__container {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+  }
+
+  &__value {
+    color: $color-f;
+    text-decoration: underline;
+  }
+}

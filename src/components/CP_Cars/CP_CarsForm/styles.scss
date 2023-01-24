@@ -1,0 +1,107 @@
+@import "../../../scss/abstracts/variables";
+
+.cars-form {
+  &__container {
+    width: 100%;
+    padding: 2rem 6rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__input-container {
+    width: 35%;
+  }
+
+  &__label {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &__input {
+    height: 4rem;
+    font-size: 2.2rem;
+
+    &:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: lighten($color: $color-f, $amount: 0%);
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem lighten($color: $color-f, $amount: 10%);
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cars-form__container {
+    padding: 2rem 0.5rem;
+  }
+}
+
+.btn {
+  &-icon {
+    display: none;
+  }
+
+  &-cars-form-container {
+    width: 20%;
+  }
+
+  &-submit-cars-form {
+    font-size: 2.2rem;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $color-f;
+    border-radius: 1000px;
+    margin-top: 1.5rem;
+
+    &:active {
+      color: $color-f !important;
+      border-bottom: 2px solid $color-f !important;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color-s !important;
+    }
+  }
+
+  &-remove-car {
+    font-size: 2rem;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $color-o;
+    border-radius: 1000px;
+
+    &:active {
+      color: $color-o !important;
+      border-bottom: 2px solid $color-o !important;
+    }
+
+    &:hover {
+      color: $color-o;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .btn-content {
+    display: none;
+  }
+  .btn-icon {
+    display: block;
+    font-size: 4rem;
+  }
+  .btn-icon-delete {
+    display: block;
+    font-size: 2rem;
+  }
+  .btn-remove-car {
+    font-size: 1.6rem;
+  }
+}

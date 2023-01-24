@@ -7,7 +7,7 @@ import DropdownPage from "./pages/CP_DropdownPage";
 import TablePage from "./pages/CP_TablePage/index";
 import CounterPage from "./pages/CP_CounterPage";
 import MediaPlaylist from "./pages/CP_MediaPlaylist";
-
+import CarsPage from "./pages/CP_Cars";
 import "./index.scss";
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
           <Route path="table" element={<TablePage />} />
           <Route path="counter" element={<CounterPage />} />
           <Route path="mediaplaylist" element={<MediaPlaylist />} />
+          <Route path="cars" element={<CarsPage />} />
           //* ─── Frontend Mentor Projects ────────
           <Route path="card" element={<Project$1$Card />} />
         </Route>

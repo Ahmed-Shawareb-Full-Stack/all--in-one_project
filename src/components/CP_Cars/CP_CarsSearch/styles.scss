@@ -1,0 +1,36 @@
+@import "../../../scss/abstracts/variables";
+
+.cars-search {
+  &__container {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__heading {
+    font-size: 2.6rem;
+  }
+
+  &__input-container {
+    width: 60%;
+  }
+
+  &__input-search {
+    height: 4rem;
+    font-size: 2.2rem;
+    &:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: lighten($color: $color-f, $amount: 0%);
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem lighten($color: $color-f, $amount: 10%);
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cars-search-container {
+    width: 100%;
+  }
+}
