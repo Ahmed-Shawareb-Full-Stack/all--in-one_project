@@ -2,9 +2,9 @@ import React from "react";
 import PlaylistRow from "../CP_PlaylistRow";
 import { CgPlayListAdd } from "react-icons/cg";
 import "./styles.scss";
-import { addMovie } from "../../store";
+import { addMovie } from "../../../store";
 import { useDispatch, useSelector } from "react-redux";
-import { createRandomMovie } from "../../data/faker";
+import { createRandomMovie } from "../../../data/faker";
 
 const MoviesPlaylist = () => {
   const dispatch = useDispatch();
