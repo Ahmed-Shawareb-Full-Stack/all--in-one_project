@@ -2,9 +2,9 @@ import React from "react";
 import PlaylistRow from "../CP_PlaylistRow";
 import { CgPlayListAdd } from "react-icons/cg";
 import "./styles.scss";
-import { createRandomSong } from "../../data/faker";
+import { createRandomSong } from "../../../data/faker";
 import { useDispatch, useSelector } from "react-redux";
-import { addSong } from "../../store";
+import { addSong } from "../../../store/CP_MediaPlaylistStore";
 
 const SongsPlaylist = () => {
   const dispatch = useDispatch();

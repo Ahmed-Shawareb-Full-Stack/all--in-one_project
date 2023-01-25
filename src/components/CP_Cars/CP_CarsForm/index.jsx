@@ -1,6 +1,10 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addCar, changeCarCost, changeCarName } from "../../../store";
+import {
+  addCar,
+  changeCarCost,
+  changeCarName,
+} from "../../../store/CP_CarsStore";
 import { BiListPlus } from "react-icons/bi";
 import "./styles.scss";
 

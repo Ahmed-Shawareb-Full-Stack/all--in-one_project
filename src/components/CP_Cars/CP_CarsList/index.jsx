@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { removeCar } from "../../../store";
+import { removeCar } from "../../../store/CP_CarsStore";
 import { RiDeleteBin2Line } from "react-icons/ri";
 import "./styles.scss";
 

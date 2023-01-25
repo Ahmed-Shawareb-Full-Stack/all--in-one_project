@@ -1,8 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import MoviesPlaylist from "../../components/CP_MoviesPlaylist";
-import SongsPlaylist from "../../components/CP_SongsPlaylist";
-import { RESET_PLAYLISTS } from "../../store";
+import MoviesPlaylist from "../../components/CP_MediaPlaylist/CP_MoviesPlaylist";
+import SongsPlaylist from "../../components/CP_MediaPlaylist/CP_SongsPlaylist";
+import { RESET_PLAYLISTS } from "../../store/CP_MediaPlaylistStore";
 import "./styles.scss";
 
 const MediaPlaylist = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { CgPlayListRemove } from "react-icons/cg";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteMovie, deleteSong } from "../../store";
+import { deleteMovie, deleteSong } from "../../../store/CP_MediaPlaylistStore";
 import "./styles.scss";
 
 const PlaylistRow = ({ name }) => {

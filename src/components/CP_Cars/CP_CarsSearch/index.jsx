@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { changSearchTerm } from "../../../store";
+import { changSearchTerm } from "../../../store/CP_CarsStore";
 import "./styles.scss";
 
 const CarsSearch = () => {
