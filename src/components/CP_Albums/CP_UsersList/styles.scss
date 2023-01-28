@@ -1,0 +1,11 @@
+@import "../../../scss/abstracts/variables";
+
+.users-list {
+  border: 2px solid $color-f;
+  width: 100%;
+  margin-top: 3rem;
+  height: 75vh;
+  overflow-y: auto;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+}

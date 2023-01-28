@@ -1,0 +1,17 @@
+@import "../../../scss/abstracts/variables";
+
+.albums-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header--container {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  &__albums-container {
+    width: 85%;
+  }
+}

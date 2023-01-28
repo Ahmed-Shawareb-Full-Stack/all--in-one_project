@@ -1,0 +1,25 @@
+@import "../../../scss/abstracts/variables";
+
+.albums-list-header {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    width: 75%;
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+
+  &__user-name {
+    font-weight: 500;
+    border-bottom: 1px solid $color-f;
+  }
+
+  &__user-name-cont {
+    border-bottom: 1px solid $color-f;
+  }
+
+  &__btns-container {
+    width: 25%;
+  }
+}

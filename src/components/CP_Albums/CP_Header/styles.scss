@@ -1,0 +1,21 @@
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/base/animations";
+
+.user-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid $color-f;
+  &__title-container {
+  }
+  &__title {
+  }
+
+  &__btns-container {
+  }
+}
+
+.spinning-icon {
+  animation: rotate-center 1s linear infinite both;
+}
