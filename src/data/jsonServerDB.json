@@ -1,24 +1,16 @@
 {
   "users": [
     {
-      "name": "Pearl Macejkovic",
+      "name": "Juana Stokes",
       "id": 1
     },
     {
-      "name": "Julian Harvey MD",
+      "name": "Ms. Joan Zboncak",
       "id": 2
     },
     {
-      "name": "Violet Hickle",
+      "name": "Miss Jerald Prosacco",
       "id": 3
-    },
-    {
-      "name": "Lamar Gibson",
-      "id": 4
-    },
-    {
-      "name": "Lena Lebsack",
-      "id": 5
     }
   ],
   "albums": [
@@ -46,6 +38,26 @@
       "userID": 1,
       "name": "Awesome Concrete Mouse",
       "id": 15
+    },
+    {
+      "userID": 3,
+      "name": "Gorgeous Concrete Sausages",
+      "id": 16
+    },
+    {
+      "userID": 3,
+      "name": "Fantastic Concrete Car",
+      "id": 17
+    },
+    {
+      "userID": 3,
+      "name": "Luxurious Steel Ball",
+      "id": 18
+    },
+    {
+      "userID": 3,
+      "name": "Practical Wooden Hat",
+      "id": 19
     }
   ],
   "photos": []
