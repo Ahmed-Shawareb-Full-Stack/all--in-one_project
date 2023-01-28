@@ -1,5 +1,52 @@
 {
-  "users": [],
-  "albums": [],
+  "users": [
+    {
+      "name": "Pearl Macejkovic",
+      "id": 1
+    },
+    {
+      "name": "Julian Harvey MD",
+      "id": 2
+    },
+    {
+      "name": "Violet Hickle",
+      "id": 3
+    },
+    {
+      "name": "Lamar Gibson",
+      "id": 4
+    },
+    {
+      "name": "Lena Lebsack",
+      "id": 5
+    }
+  ],
+  "albums": [
+    {
+      "userID": 4,
+      "name": "Electronic Metal Car",
+      "id": 8
+    },
+    {
+      "userID": 4,
+      "name": "Ergonomic Soft Table",
+      "id": 9
+    },
+    {
+      "userID": 4,
+      "name": "Refined Granite Shoes",
+      "id": 10
+    },
+    {
+      "userID": 4,
+      "name": "Elegant Steel Chips",
+      "id": 11
+    },
+    {
+      "userID": 1,
+      "name": "Awesome Concrete Mouse",
+      "id": 15
+    }
+  ],
   "photos": []
 }

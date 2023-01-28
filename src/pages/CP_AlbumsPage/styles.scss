@@ -1,0 +1,106 @@
+@import "../../scss/abstracts/variables";
+
+.albums-page {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.albums-comps-container {
+  width: 60%;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid $color-f;
+  border-radius: 10px;
+}
+
+.header-comp {
+  width: 95%;
+}
+
+.users-list-comp {
+  width: 90%;
+}
+
+.btn {
+  &__add-user {
+    font-size: 2rem;
+    color: $color-o;
+
+    &:hover {
+      color: $color-p;
+      background-color: $color-o;
+      border-color: $color-o;
+    }
+
+    &:active {
+      color: $color-o !important;
+      background-color: $color-white !important;
+      border-color: $color-o !important;
+    }
+  }
+
+  &__delete {
+    font-size: 2rem;
+  }
+
+  &__delete--user {
+    padding: 0 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__expand-panel-expand {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    outline: 0 !important;
+    border: 0 !important;
+
+    &:hover {
+      padding: 0;
+      margin: 0;
+      color: $color-o;
+      border: 0px !important;
+      outline: 0 !important;
+    }
+
+    &:active {
+      padding: 0;
+      margin: 0;
+      color: $color-o !important;
+      border: 0px !important;
+      outline: 0 !important;
+    }
+  }
+
+  &__add-album {
+    font-size: 1.8rem;
+    color: $color-f;
+    border: 0;
+    border-bottom: 1.5px solid $color-o;
+    border-radius: 1000px;
+    width: 100%;
+
+    &:hover {
+      color: $color-p;
+      background-color: $color-f;
+      border-color: $color-f;
+    }
+
+    &:active {
+      color: $color-f !important;
+      background-color: $color-white !important;
+      border-color: $color-f !important;
+    }
+  }
+}

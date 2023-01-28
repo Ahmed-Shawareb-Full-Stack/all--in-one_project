@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import { moviesReducer } from "./slices/CP_MediaPlaylist/moviesSlice";
 import { songsReducer } from "./slices/CP_MediaPlaylist/songsSlice";
 import { addSong, deleteSong } from "./slices/CP_MediaPlaylist/songsSlice";
@@ -15,6 +15,9 @@ import {
   addCar,
   removeCar,
 } from "./slices/CP_Cars/slices/carsListSlice";
+import { usersApi } from "./apis/usersApi";
+import { setupListeners } from "@reduxjs/toolkit/dist/query";
+import { albumsApi } from "./apis/albumsApi";
 
 const store = configureStore({
   reducer: {
@@ -27,8 +30,21 @@ const store = configureStore({
 
     carsForm: createCarFormReducer,
     cars: carsListReducer,
+
+    //* ─── Cp - Albums State ───────────────────────────────────────
+
+    [usersApi.reducerPath]: usersApi.reducer,
+    [albumsApi.reducerPath]: albumsApi.reducer,
+  },
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(
+      usersApi.middleware,
+      albumsApi.middleware
+    );
   },
 });
+
+setupListeners(store.dispatch);
 
 export {
   store,
@@ -43,3 +59,15 @@ export {
   addCar,
   removeCar,
 };
+
+export {
+  useFetchUsersQuery,
+  useAddUserMutation,
+  useDeleteUserMutation,
+} from "./apis/usersApi";
+
+export {
+  useFetchAlbumsQuery,
+  useAddAlbumMutation,
+  useRemoveAlbumMutation,
+} from "./apis/albumsApi";
