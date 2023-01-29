@@ -8,4 +8,7 @@
   overflow-y: auto;
   padding: 1rem 2.5rem;
   border-radius: 5px;
+  @media (max-width: 991.98px) {
+    padding: 2rem 1rem;
+  }
 }

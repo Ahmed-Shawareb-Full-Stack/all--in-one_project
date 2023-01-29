@@ -1,18 +1,5 @@
 {
-  "users": [
-    {
-      "name": "Juana Stokes",
-      "id": 1
-    },
-    {
-      "name": "Ms. Joan Zboncak",
-      "id": 2
-    },
-    {
-      "name": "Miss Jerald Prosacco",
-      "id": 3
-    }
-  ],
+  "users": [],
   "albums": [
     {
       "userID": 4,
@@ -35,29 +22,19 @@
       "id": 11
     },
     {
-      "userID": 1,
-      "name": "Awesome Concrete Mouse",
-      "id": 15
-    },
-    {
-      "userID": 3,
-      "name": "Gorgeous Concrete Sausages",
-      "id": 16
-    },
-    {
-      "userID": 3,
-      "name": "Fantastic Concrete Car",
-      "id": 17
-    },
-    {
-      "userID": 3,
-      "name": "Luxurious Steel Ball",
-      "id": 18
-    },
-    {
       "userID": 3,
       "name": "Practical Wooden Hat",
       "id": 19
+    },
+    {
+      "userID": 3,
+      "name": "Fantastic Frozen Chicken",
+      "id": 20
+    },
+    {
+      "userID": 3,
+      "name": "Recycled Plastic Pants",
+      "id": 21
     }
   ],
   "photos": []

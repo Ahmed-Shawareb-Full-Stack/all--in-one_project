@@ -20,6 +20,11 @@
   justify-content: center;
   border: 3px solid $color-f;
   border-radius: 10px;
+
+  @media (max-width: 991.98px) {
+    width: 100%;
+    padding: 2rem 0.5rem;
+  }
 }
 
 .header-comp {
@@ -28,6 +33,9 @@
 
 .users-list-comp {
   width: 90%;
+  @media (max-width: 991.98px) {
+    width: 95%;
+  }
 }
 
 .btn {
@@ -53,7 +61,7 @@
   }
 
   &__delete--user {
-    padding: 0 2rem;
+    padding: 0 0.75rem;
     padding-bottom: 0.5rem;
   }
 

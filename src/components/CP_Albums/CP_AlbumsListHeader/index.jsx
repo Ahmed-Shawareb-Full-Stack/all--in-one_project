@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss";
 import { useAddAlbumMutation } from "../../../store";
+import { CgPlayListAdd } from "react-icons/cg";
 
 const AlbumsListHeader = ({ user }) => {
   const [addAlbum, results] = useAddAlbumMutation();
@@ -16,7 +17,11 @@ const AlbumsListHeader = ({ user }) => {
       </span>
       <span className="albums-list-header__btns-container">
         <button className="btn btn__add-album" onClick={handleAddAlbum}>
-          Add Album
+          <span className="add-album-icon">
+            <CgPlayListAdd />
+          </span>
+
+          <span className="add-album-text">+ Add Album</span>
         </button>
       </span>
     </div>
