@@ -1,0 +1,33 @@
+@import "../../../scss/abstracts/variables";
+
+.photos {
+  &__header {
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+  }
+}
+
+.slide {
+  z-index: 100;
+  position: absolute;
+  &__left {
+    top: 45%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &__right {
+    top: 45%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}

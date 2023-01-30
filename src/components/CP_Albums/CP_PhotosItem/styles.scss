@@ -1,0 +1,30 @@
+.photo-item {
+  position: relative;
+
+  padding-bottom: 2rem;
+
+  @media (max-width: 991.98px) {
+    padding-bottom: 0;
+  }
+
+  &:hover > .photo-item__btns-container {
+    display: block;
+  }
+  &__btns-container {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 0rem;
+    left: 0rem;
+    display: none;
+  }
+
+  &__photo-container {
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__photo {
+  }
+}
