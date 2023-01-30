@@ -45,6 +45,11 @@
     animation: expandPanel-album 0.75s ease-in-out;
     padding: 1rem 2rem;
     height: 25vh;
+
+    @media (max-width: 991.98px) {
+      padding: 1rem 0.75rem;
+      height: 30vh;
+    }
   }
 }
 

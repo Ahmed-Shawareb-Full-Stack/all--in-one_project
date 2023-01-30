@@ -12,7 +12,7 @@ const UserList = () => {
   let content;
 
   isLoading || isFetching
-    ? (content = <Skelton number={5} />)
+    ? (content = <Skelton number={5} type="row" />)
     : error
     ? (content = <div>Error</div>)
     : !data.length

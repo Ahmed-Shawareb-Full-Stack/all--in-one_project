@@ -10,6 +10,7 @@ import MediaPlaylist from "./pages/CP_MediaPlaylist";
 import CarsPage from "./pages/CP_Cars";
 import AlbumsPage from "./pages/CP_AlbumsPage";
 import "./index.scss";
+import SliderPage from "./pages/SL_SliderPage";
 
 function App() {
   return (

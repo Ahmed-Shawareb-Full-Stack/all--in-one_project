@@ -20,7 +20,6 @@ const AlbumsListHeader = ({ user }) => {
           <span className="add-album-icon">
             <CgPlayListAdd />
           </span>
-
           <span className="add-album-text">+ Add Album</span>
         </button>
       </span>

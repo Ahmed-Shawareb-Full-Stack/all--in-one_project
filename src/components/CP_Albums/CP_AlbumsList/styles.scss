@@ -13,5 +13,9 @@
 
   &__albums-container {
     width: 85%;
+
+    @media (max-width: 991.98px) {
+      width: 95%;
+    }
   }
 }

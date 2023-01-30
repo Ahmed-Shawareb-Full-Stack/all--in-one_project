@@ -2,7 +2,7 @@ import React from "react";
 import ExpandPanel from "../CP_ExpandPanel";
 import { GoTrashcan } from "react-icons/go";
 import "./styles.scss";
-import { useDeleteUserMutation } from "../../../store";
+import { useDeleteUserMutation, useFetchAlbumsQuery } from "../../../store";
 import AlbumsList from "../CP_AlbumsList";
 
 const UserListItem = ({ user }) => {

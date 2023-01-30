@@ -111,4 +111,54 @@
       border-color: $color-f !important;
     }
   }
+
+  &__add-photo {
+    font-size: 1.6rem;
+    color: $color-f;
+    border: 0;
+    border-bottom: 1.5px solid $color-o;
+    border-radius: 1000px;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+
+    &:hover {
+      color: $color-p;
+      background-color: $color-f;
+      border-color: $color-f;
+    }
+
+    &:active {
+      color: $color-f !important;
+      background-color: $color-white !important;
+      border-color: $color-f !important;
+    }
+  }
+
+  &__delete-photo {
+    width: 100%;
+    font-size: 3rem;
+    color: $color-o;
+    border: 0;
+
+    &:hover {
+      color: $color-o;
+    }
+
+    &:active {
+      color: $color-o !important;
+    }
+  }
+
+  &__slide {
+    font-size: 3rem;
+    color: $color-white;
+    border: 0;
+    &:hover {
+      color: $color-white;
+    }
+
+    &:active {
+      color: $color-white !important;
+    }
+  }
 }

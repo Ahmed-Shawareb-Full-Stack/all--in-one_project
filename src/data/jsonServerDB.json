@@ -1,41 +1,5 @@
 {
   "users": [],
-  "albums": [
-    {
-      "userID": 4,
-      "name": "Electronic Metal Car",
-      "id": 8
-    },
-    {
-      "userID": 4,
-      "name": "Ergonomic Soft Table",
-      "id": 9
-    },
-    {
-      "userID": 4,
-      "name": "Refined Granite Shoes",
-      "id": 10
-    },
-    {
-      "userID": 4,
-      "name": "Elegant Steel Chips",
-      "id": 11
-    },
-    {
-      "userID": 3,
-      "name": "Practical Wooden Hat",
-      "id": 19
-    },
-    {
-      "userID": 3,
-      "name": "Fantastic Frozen Chicken",
-      "id": 20
-    },
-    {
-      "userID": 3,
-      "name": "Recycled Plastic Pants",
-      "id": 21
-    }
-  ],
+  "albums": [],
   "photos": []
 }

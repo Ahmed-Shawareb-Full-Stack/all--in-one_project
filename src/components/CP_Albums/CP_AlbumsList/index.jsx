@@ -12,7 +12,7 @@ const AlbumsList = ({ user }) => {
   let content;
 
   isLoading || isFetching
-    ? (content = <Skelton number={5} />)
+    ? (content = <Skelton number={5} type="row" />)
     : isError
     ? (content = <div>error</div>)
     : !data.length

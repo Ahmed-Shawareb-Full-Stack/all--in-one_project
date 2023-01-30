@@ -6,6 +6,7 @@ const NoData = () => {
   return (
     <div className="no-data">
       <img src={noData} alt="No Data" className="image-fluid no-data__image" />
+      <div className="no-data__text">No Data</div>
     </div>
   );
 };
