@@ -8,11 +8,68 @@
   height: 56rem;
   width: 100%;
   background-color: $huddd-color-dark-cyan;
+  align-content: center;
   @include respond(phone) {
     height: 100rem;
   }
-
   &__float-panel {
+    width: 80rem;
+    height: 28rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    @include respond(phone) {
+      transform: translate(-50%, -70%) scale(0.9);
+    }
+
+    &--title-container {
+    }
+
+    &--title {
+      color: $huddd-color-dark-cyan;
+      font-size: 3.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &--btn-container {
+    }
+
+    &--btn {
+      width: 40rem;
+      height: 8rem;
+      border-radius: 1000px;
+      background-color: $hudd-color-primary;
+      font-family: $huddle-font-secondary;
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 500;
+      border-radius: 1000px;
+      border: 0;
+      &:active {
+        border: 0;
+        background-color: #ff9bdb !important;
+      }
+
+      &:hover {
+        color: #fff !important;
+        background-color: $hudd-color-primary;
+      }
+
+      @include respond(phone) {
+        width: 30rem;
+      }
+    }
   }
 
   &__info-list {

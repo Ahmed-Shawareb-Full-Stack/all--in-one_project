@@ -10,8 +10,19 @@ import "./styles.scss";
 
 export const Footer = () => {
   return (
-    <div className="hudd-footer row">
-      <div className="hudd-footer__float-panel"></div>
+    <div className="hudd-footer row position-relative">
+      <div className="hudd-footer__float-panel">
+        <div className="hudd-footer__float-panel--title-container">
+          <h2 className="hudd-footer__float-panel--title">
+            Ready To Build Your Community
+          </h2>
+        </div>
+        <div className="hudd-footer__float-panel--btn-container">
+          <button className="hudd-footer__float-panel--btn btn btn-float-panel">
+            Get Started For Free
+          </button>
+        </div>
+      </div>
       <div className="hudd-footer__info-list col-md-4 col-sm-12">
         <div className="hudd-footer__info-list--logo-container">
           <img
