@@ -1,0 +1,66 @@
+@import "../scss/abstracts/variables";
+@import "../scss/base/typo";
+@import "../../../scss/abstracts/mixins";
+
+.hudd-main {
+  @include respond(phone) {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+  }
+  @include respond(tab-land) {
+    padding-inline: 3rem;
+  }
+  padding-inline: 10rem;
+  .hudd-section {
+    &:first-child {
+      margin-top: 16rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &:last-child {
+      margin-bottom: 35rem;
+    }
+    height: 44.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+
+    @include respond(phone) {
+      height: 75rem;
+    }
+    &__content {
+      padding: 8rem;
+
+      @include respond(tab-land) {
+        padding-inline: 5rem 0rem;
+      }
+
+      @include respond(phone) {
+        padding: 2rem;
+        text-align: center;
+      }
+      &--title {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+        color: $huddd-color-dark-cyan;
+      }
+
+      &--paragraph {
+        font-size: 1.8rem;
+        color: $huddd-color-dark-cyan;
+      }
+    }
+
+    &__image-container {
+    }
+
+    &__image {
+      width: 40rem;
+      @include respond(phone) {
+        width: 30rem;
+      }
+    }
+  }
+}

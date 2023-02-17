@@ -46,8 +46,8 @@ const courseProjectsNavLinks = [
 ];
 const frontendMentorNavLinks = [
   {
-    to: "/card",
-    title: "Card - FrMentor Project 1",
+    to: "/huddle",
+    title: "Huddle Page",
   },
 ];
 

@@ -1,0 +1,121 @@
+@import "../../../scss/abstracts/mixins";
+@import "../scss/abstracts/variables";
+@import "../scss/base/typo";
+
+.hudd-footer {
+  font-family: $huddle-font-secondary;
+  color: #fff;
+  height: 56rem;
+  width: 100%;
+  background-color: $huddd-color-dark-cyan;
+  @include respond(phone) {
+    height: 100rem;
+  }
+
+  &__float-panel {
+  }
+
+  &__info-list {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-inline-start: 8rem;
+
+    @include respond(phone) {
+      padding-inline-start: 4rem;
+      justify-content: center;
+    }
+
+    &--logo-container {
+      margin-bottom: 3rem;
+    }
+
+    &--logo {
+    }
+
+    &--location {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+      &-logo {
+      }
+
+      &-desc {
+      }
+    }
+
+    &--phone {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+      &-logo {
+      }
+
+      &-number {
+        color: #fff !important;
+      }
+    }
+
+    &--email {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+      &-logo {
+      }
+
+      &-address {
+        color: #fff !important;
+      }
+    }
+  }
+
+  &__lists-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list-container {
+    display: flex;
+    justify-content: center;
+    @include respond(phone) {
+      justify-content: flex-start;
+      padding-inline-start: 2rem;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--icon {
+      width: 3.6rem;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__copyright {
+  }
+}

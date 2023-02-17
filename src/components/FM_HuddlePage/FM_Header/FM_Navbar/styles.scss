@@ -1,0 +1,48 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/base/typo";
+@import "../../../../scss/abstracts/mixins";
+
+.hudd-navbar {
+  margin-top: 4.8rem;
+  margin-bottom: 7rem;
+  @include respond(phone) {
+    margin-bottom: 0;
+  }
+  width: 100%;
+  font-family: $huddle-font-primary;
+
+  &__logo-container {
+    @include respond(phone) {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+  }
+
+  &__btn-navbar-container {
+  }
+
+  &__btn-navbar {
+    color: $huddd-color-dark-cyan;
+    width: 20rem;
+    height: 4.8rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 1000px;
+    box-shadow: 1px -1px 15px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1px -1px 15px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px -1px 15px 0px rgba(0, 0, 0, 0.4);
+    border: 0;
+
+    &:active {
+      border: 0;
+      color: $hudd-color-g-blue !important;
+      box-shadow: 1px -1px 15px 0px rgba(0, 0, 0, 0.65);
+      -webkit-box-shadow: 1px -1px 15px 0px rgba(0, 0, 0, 0.65);
+      -moz-box-shadow: 1px -1px 15px 0px rgba(0, 0, 0, 0.65);
+    }
+    &:focus {
+    }
+  }
+}

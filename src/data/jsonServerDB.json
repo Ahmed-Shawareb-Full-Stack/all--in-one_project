@@ -1,5 +1,59 @@
 {
-  "users": [],
-  "albums": [],
-  "photos": []
+  "users": [
+    {
+      "name": "Sheldon Jacobs",
+      "id": 1
+    },
+    {
+      "name": "Woodrow Doyle",
+      "id": 2
+    },
+    {
+      "name": "Seth Dibbert",
+      "id": 3
+    },
+    {
+      "name": "Tabitha Rogahn",
+      "id": 4
+    }
+  ],
+  "albums": [
+    {
+      "userID": 1,
+      "name": "Pamela Hamill",
+      "id": 1
+    },
+    {
+      "userID": 2,
+      "name": "Sherri Schaefer",
+      "id": 2
+    },
+    {
+      "userID": 2,
+      "name": "Preston Kuhn",
+      "id": 3
+    }
+  ],
+  "photos": [
+    {
+      "albumID": "1",
+      "url": "https://loremflickr.com/150/150/nature?lock=71282",
+      "id": 3
+    },
+    {
+      "albumID": "1",
+      "url": "https://loremflickr.com/150/150/nature?lock=17370",
+      "id": 4
+    },
+    {
+      "albumID": "1",
+      "url": "https://loremflickr.com/150/150/nature?lock=58034",
+      "id": 5
+    },
+    {
+      "albumID": "2",
+      "url": "https://loremflickr.com/150/150/nature?lock=82872",
+      "id": 6
+    }
+  ]
 }

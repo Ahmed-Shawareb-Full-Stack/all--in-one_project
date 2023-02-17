@@ -1,0 +1,19 @@
+@import "../../../scss/abstracts/mixins";
+
+.hudd-header {
+  background-image: url(../assets/images/bg-hero-desktop.svg);
+  height: 72rem;
+  width: 100%;
+  background-size: cover;
+  @media (max-width: 576px) {
+    background-image: url(../assets/images/bg-hero-mobile.svg);
+    height: 130rem;
+    width: 100%;
+    background-size: cover;
+  }
+  &__navbar--container {
+  }
+
+  &__hero--container {
+  }
+}

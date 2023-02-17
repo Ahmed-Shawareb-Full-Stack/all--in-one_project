@@ -33,8 +33,8 @@ const Layout = () => {
           <Navigation onToggle={handleNavState} navState={navState} />
         </div>
         <div
-          className={`col-lg-9  outlet position-relative ms-auto ${
-            navState ? "outlet-expand" : ""
+          className={`col-lg-9  outlet position-relative ${
+            navState ? "mx-auto" : "ms-auto"
           } d-flex align-items-center justify-content-center flex-column`}
         >
           <Outlet />

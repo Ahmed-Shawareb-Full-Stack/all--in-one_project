@@ -10,7 +10,7 @@ import MediaPlaylist from "./pages/CP_MediaPlaylist";
 import CarsPage from "./pages/CP_Cars";
 import AlbumsPage from "./pages/CP_AlbumsPage";
 import "./index.scss";
-
+import { HuddlePage } from "./pages";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
           <Route path="cars" element={<CarsPage />} />
           <Route path="albums" element={<AlbumsPage />} />
           //* ─── Frontend Mentor Projects ────────
-          <Route path="card" element={<Project$1$Card />} />
+          <Route path="huddle" element={<HuddlePage />} />
         </Route>
       </Routes>
     </div>

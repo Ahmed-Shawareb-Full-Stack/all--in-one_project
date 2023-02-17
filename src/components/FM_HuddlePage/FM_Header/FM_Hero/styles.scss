@@ -1,0 +1,86 @@
+@import "../../scss/base/typo";
+@import "../../scss/abstracts/variables";
+@import "../../../../scss/abstracts/mixins";
+
+.hudd-hero {
+  font-family: $huddle-font-primary;
+  @include respond(phone) {
+    margin-top: 17.5rem;
+  }
+  &__content {
+    &--left {
+      @media (min-width: 1250px) {
+        padding-left: 8rem !important;
+      }
+    }
+
+    &--right {
+    }
+
+    &--title {
+      font-family: $huddle-font-primary;
+      font-size: 4rem;
+      font-weight: 500;
+
+      @include respond(phone) {
+        margin-bottom: 7rem;
+      }
+    }
+
+    &--paragraph {
+      font-family: $huddle-font-secondary;
+      font-size: 1.6rem;
+      font-weight: 400;
+
+      @include respond(phone) {
+        margin-bottom: 7rem;
+      }
+    }
+
+    &--image {
+      @include respond(phone) {
+        margin-top: 7rem;
+      }
+
+      @include respond(tab-land) {
+        width: 42rem;
+      }
+
+      @include respond(phone) {
+        width: 30rem;
+      }
+
+      width: 68rem;
+
+      // @media (max-width: 567px) {
+      //   width: 30rem;
+      // }
+
+      // @media (max-width: 1200px) {
+      //   width: 48rem;
+      // }
+    }
+  }
+
+  &__btn-content {
+    background-color: $hudd-color-primary;
+    font-family: $huddle-font-secondary;
+    color: #fff;
+    width: 28rem;
+    height: 5.8rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 1000px;
+    border: 0;
+
+    &:active {
+      border: 0;
+      background-color: #ff9bdb !important;
+    }
+
+    &:hover {
+      color: #fff !important;
+      background-color: $hudd-color-primary;
+    }
+  }
+}
